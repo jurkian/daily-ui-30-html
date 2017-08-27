@@ -6,15 +6,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title><%= htmlWebpackPlugin.options.title %></title>
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 </head>
 
 <body>
-	<div id="root"></div>
-
-	<p>Hello there</p>
-
-	<img src="<%= require('./img/zombie.svg') %>" alt="">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<section class="home">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>Welcome to react-bank</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 hidden-xs hidden-sm">
+					<img src="https://placehold.it/400x300" class="img-responsive" alt="">
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sequi.</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sequi.</p>
+					<a href="#" class="btn btn-primary">Log in now</a>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 </html>
