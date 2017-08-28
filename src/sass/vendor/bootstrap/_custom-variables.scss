@@ -21,6 +21,8 @@ $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
+$light-blue:            #7c99d6;
+
 
 //== Scaffolding
 //
@@ -29,7 +31,7 @@ $brand-danger:          #d9534f !default;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            $light-blue !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
