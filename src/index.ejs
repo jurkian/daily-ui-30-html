@@ -9,19 +9,25 @@
 
    <!-- Fonts -->
    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+
+   <!-- Icons -->
+   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 
 <body>
    <div class="container">
+
       <!-- Home module -->
       <section class="row home module">
-         <div class="col-xs-12 home-header">
+         <header class="col-xs-12 home-header">
             <h1>Welcome to react-bank</h1>
-         </div>
-         <div class="col-md-6 hidden-xs hidden-sm home-image">
+         </header>
+
+         <section class="col-md-6 hidden-xs hidden-sm home-image">
             <img src="https://placehold.it/400x300" class="img-responsive" alt="Home image">
-         </div>
-         <div class="col-xs-12 col-md-6 home-features">
+         </section>
+
+         <section class="col-xs-12 col-md-6 home-features">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sequi.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sequi.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sequi.</p>
@@ -29,16 +35,17 @@
             <div class="home-cta">
                <a href="#" class="btn btn-primary btn-lg">Log in now</a>
             </div>
-         </div>
+         </section>
       </section>
 
       <!-- Login module -->
       <section class="row login module">
-         <div class="col-xs-12 login-icon">
+         <section class="col-xs-12 login-icon">
             <div class="icon-container">
                <img src="<%= require('./img/login-icon.png') %>" class="img-responsive" alt="Login icon">
             </div>
-         </div>
+         </section>
+
          <form class="col-xs-12 login-form" method="post">
             <div class="form-group">
                <input type="text" class="form-control login-input" placeholder="Login">
@@ -52,7 +59,47 @@
                </label>
             </div>
          </form>
+
          <button type="submit" class="btn btn-primary module-btn">Submit</button>
+      </section>
+
+      <!-- User profile module -->
+      <section class="row profile module">
+         <header class="profile-header">
+            <h3>John Doe</h3>
+            <p>Registered on 31/08/2017</p>
+            <img src="https://placehold.it/200x200" alt="John Doe profile image">
+         </header>
+
+         <section class="profile-stats">
+            <div class="stats-green">
+               <strong>2</strong>
+               <span>Accounts</span>
+            </div>
+            <div class="stats-blue">
+               <strong>288.37</strong>
+               <span>Balance</span>
+            </div>
+            <div class="stats-red">
+               <strong>7</strong>
+               <span>Messages</span>
+            </div>
+         </section>
+
+         <section class="profile-links">
+            <a href="#">
+               <i class="ion-images"></i>
+               <span>Link 1</span>
+            </a>
+            <a href="#">
+               <i class="ion-card"></i>
+               <span>Link 2</span>
+            </a>
+            <a href="#">
+               <i class="ion-android-checkbox-outline"></i>
+               <span>Link 3</span>
+            </a>
+         </section>
       </section>
    </div>
 </body>
