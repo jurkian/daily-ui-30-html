@@ -1,0 +1,14 @@
+.btn {
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+// Big module's button
+
+.module-btn {
+   width: 100%;
+   background-image: linear-gradient(to right, $light-blue 0%, $dark-blue 100%);
+   padding: 30px 20px;
+   border: 0;
+   border-radius: 0;
+}
