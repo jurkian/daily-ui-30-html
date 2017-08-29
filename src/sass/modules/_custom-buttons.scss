@@ -5,10 +5,26 @@
 
 // Big module's button
 
-.module-btn {
-   width: 100%;
+.module-btn, .double-buttons a {
    background-image: linear-gradient(to right, $light-blue 0%, $dark-blue 100%);
-   padding: 30px 20px;
    border: 0;
    border-radius: 0;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.module-btn {
+   width: 100%;
+   padding: 30px 8px;
+}
+
+.double-buttons {
+   display: flex;
+
+   a {
+      flex: 1;
+      padding: 25px 8px;
+      font-size: 14px;
+      font-weight: 700;
+   }
 }
