@@ -1,6 +1,8 @@
 # Daily UI 30 HTML
 
-HTML version of few [Daily UI 30](https://symu.co/freebies/ui-kits-9/daily-ui-30-elements/) elements
+HTML version of few [Daily UI 30](https://symu.co/freebies/ui-kits-9/daily-ui-30-elements/) elements.
+
+**Keywords:** HTML5, CSS3, Flexbox, Sass, Bootstrap 3, mobile first
 
 ## Getting started
 
