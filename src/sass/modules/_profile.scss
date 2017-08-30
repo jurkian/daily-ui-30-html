@@ -20,7 +20,7 @@
    }
 
    p {
-      color: #cbd8f3;
+      color: $light-gray;
       font-size: 14px;
       font-weight: 400;
       margin-bottom: -20px;
@@ -30,7 +30,7 @@
       max-width: 100px;
       border-radius: 50%;
       border: 5px solid #fff;
-      box-shadow: 0 0 65px rgba(131, 100, 238, 0.15);
+      box-shadow: 0 0 65px $navy-box-shadow;
       transform: translateY(50%);
    }
 }
@@ -39,12 +39,16 @@
 
 .profile-stats {
    display: flex;
+   flex-direction: column;
    justify-content: center;
-   margin-bottom: 32px;
+   margin-bottom: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
 
    div {
       flex: 1;
       text-align: center;
+      margin-bottom: 20px;
    }
 
    strong, span {
@@ -57,32 +61,40 @@
 
    span {
       font-size: 14px;
-      color: #cbd8f3;
+      color: $light-gray;
    }
 }
 
 // Stats colors
 
-.stats-green strong { color: #40e261; }
-.stats-blue strong { color: #3d6cde; }
-.stats-red strong { color: #ff2546; }
+.stats-green strong { color: $light-green; }
+.stats-blue strong { color: $dark-blue; }
+.stats-red strong { color: $pink; }
 
 // Profile links
 
 .profile-links {
    display: flex;
-   box-shadow: 0 0 65px rgba(131, 100, 238, 0.15);
+   flex-direction: column;
+   box-shadow: 0 0 65px $navy-box-shadow;
+   padding-left: 0;
+   padding-right: 0;
 
    a {
       flex: 1;
       display: flex;
       flex-direction: column;
       text-align: center;
-      padding: 30px 5px;
-   }
-   
-   i, span {
+      padding: 15px 5px;
+      text-decoration: none;
 
+      &:hover {
+         background-image: linear-gradient(to right, $light-blue 0%, $dark-blue 100%);
+
+         i, span {
+            color: #fff;
+         }
+      }
    }
 
    i {
@@ -96,5 +108,24 @@
       color: #c9d4eb;
       text-transform: uppercase;
       font-size: 14px;
+   }
+}
+
+@media (min-width: 360px) {
+   .profile-stats {
+      margin-bottom: 32px;
+      flex-direction: row;
+
+      div {
+         margin-bottom: 0;
+      }
+   }
+
+   .profile-links {
+      flex-direction: row;
+
+      a {
+         padding: 30px 5px;
+      }
    }
 }
