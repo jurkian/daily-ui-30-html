@@ -6,20 +6,22 @@
       text-align: center;
       font-size: 34px;
    }
-
 }
 
 .home-header {
    margin-bottom: 20px;
 }
 
-.home-image {
-
-}
-
 .home-features {
+   display: flex;
+   justify-content: space-between;
 
+   .home-image, .home-text {
+      flex: 1;
+   }
 }
+
+.home-image { display: none; }
 
 .home-cta {
    text-align: center;
@@ -33,5 +35,11 @@
       h1 {
          font-size: 60px;
       }
+   }
+
+   .home-image { display: inline; }
+
+   .home-text {
+      margin-left: 25px;
    }
 }
