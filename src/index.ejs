@@ -48,29 +48,35 @@
       
 
       <!-- Login module -->
-      <section class="row login module">
-         <section class="col-xs-12 login-icon">
-            <div class="icon-container">
-               <img src="<%= require('./img/login-icon.png') %>" class="img-responsive" alt="Login icon">
-            </div>
-         </section>
+      <div class="row">
+         <div class="col-xs-12">
+            <section class="login module">
+               <section class="login-icon">
+                  <div class="icon-container">
+                     <img src="<%= require('./img/login-icon.png') %>" class="img-responsive" alt="Login icon">
+                  </div>
+               </section>
+      
+               <form class="login-form" method="post">
+                  <div class="form-group">
+                     <input type="text" class="form-control login-input" placeholder="Login">
+                  </div>
+                  <div class="form-group">
+                     <input type="password" class="form-control password-input" placeholder="Password">
+                  </div>
+                  <div class="checkbox">
+                     <label>
+                        <input type="checkbox"> Keep me signed in
+                     </label>
+                  </div>
+               </form>
 
-         <form class="col-xs-12 login-form" method="post">
-            <div class="form-group">
-               <input type="text" class="form-control login-input" placeholder="Login">
-            </div>
-            <div class="form-group">
-               <input type="password" class="form-control password-input" placeholder="Password">
-            </div>
-            <div class="checkbox">
-               <label>
-                  <input type="checkbox"> Keep me signed in
-               </label>
-            </div>
-         </form>
-
-         <button type="submit" class="btn btn-primary module-btn">Submit</button>
-      </section>
+               <div class="module-single-btn">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+               </div>
+            </section>
+         </div>
+      </div>
 
       <!-- User profile module -->
       <section class="row profile module">

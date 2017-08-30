@@ -23,7 +23,7 @@
 // Form
 
 .login-input, .password-input {
-   padding: 25px 17px 25px 44px;
+   padding-left: 44px;
    background-position: 17px;
    background-repeat: no-repeat;
 }
@@ -34,6 +34,10 @@
 
 .password-input {
    background-image: url('../img/lock-icon.svg');
+}
+
+.checkbox {
+   margin: 20px 0;
 }
 
 // CTA button

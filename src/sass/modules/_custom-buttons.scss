@@ -3,25 +3,36 @@
    font-weight: bold;
 }
 
-// Big module's button
+// Big module buttons
 
-.module-btn, .double-buttons a {
-   background-image: linear-gradient(to right, $light-blue 0%, $dark-blue 100%);
-   border: 0;
-   border-radius: 0;
-   text-transform: uppercase;
-   text-align: center;
+.module-single-btn, .module-double-btn {
+   padding-left: 0;
+   padding-right: 0;
+
+   a, button {
+      background-image: linear-gradient(to right, $light-blue 0%, $dark-blue 100%);
+      border: 0;
+      border-radius: 0;
+      text-transform: uppercase;
+      text-align: center;
+   }
 }
 
-.module-btn {
-   width: 100%;
-   padding: 30px 8px;
+// Single module button
+
+.module-single-btn {
+   a, button {
+      width: 100%;
+      padding: 30px 8px;
+   }
 }
 
-.double-buttons {
+// Double module button
+
+.module-double-btn {
    display: flex;
 
-   a {
+   a, button {
       flex: 1;
       padding: 25px 8px;
       font-size: 14px;
