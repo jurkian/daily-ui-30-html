@@ -41,7 +41,7 @@
    ul {
       @include reset-ul();
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       flex-wrap: wrap;
    }
 
@@ -104,6 +104,13 @@
 
    .navigation-header-links {
       margin: 0;
+   }
+}
 
+@media (min-width: 530px) {
+   .navigation nav {
+      ul {
+         justify-content: space-between;
+      }
    }
 }
