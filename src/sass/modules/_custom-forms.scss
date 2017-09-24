@@ -1,5 +1,5 @@
 .form-group {
-   ::placeholder, label {
+   label {
       color: $light-blue;
    }
 }
@@ -7,6 +7,6 @@
 // Input, select, textarea
 
 .form-control {
-   padding: 25px 17px;
-   color: $light-blue;
+   padding: 8px 17px;
+   height: 52px;
 }
